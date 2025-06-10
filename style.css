@@ -1,4 +1,4 @@
-body {
+html, body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: url('ineu-background.jpg') no-repeat center center fixed;
@@ -32,7 +32,7 @@ header {
 .language-switcher button {
   margin: 0 5px;
   padding: 5px 10px;
-  background: #1e4ba0;
+  background-color: #1e4ba0;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -55,7 +55,7 @@ header {
   position: sticky;
   top: 100px;
   width: 200px;
-  background: #ffffffcc;
+  background-color: #ffffffcc;
   padding: 15px;
   border: 1px solid #ccc;
   height: fit-content;
@@ -71,7 +71,7 @@ header {
 
 main {
   flex-grow: 1;
-  background: #ffffffdd;
+  background-color: #ffffffdd;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px #ccc;
@@ -103,13 +103,14 @@ form input, form button {
 
 form button {
   margin-top: 15px;
-  background: #1e4ba0;
+  background-color: #1e4ba0;
   color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 form button:hover {
-  background: #163d7d;
+  background-color: #163d7d;
 }
 
 section {
