@@ -22,8 +22,8 @@ const translations = {
     form_name: "ФИО:",
     form_email: "Электронная почта:",
     form_phone: "Номер телефона:",
-    form_login: "Комментарий:",
-    form_file: "Прикрепить статью:",
+    form_login: "Логин:",
+    form_file: "Ссылка на статью (например, Google Диск):",
     form_submit: "Отправить заявку",
     feedback_title: "Обратная связь",
     feedback_text: "Если у вас возникли вопросы, предложения или замечания, пожалуйста, напишите нам...",
@@ -54,30 +54,27 @@ const translations = {
     form_email: "Электрондық пошта:",
     form_phone: "Телефон нөмірі:",
     form_login: "Логин:",
-    form_file: "Мақала тіркеу:",
+    form_file: "Мақалаға сілтеме (Google Drive):",
     form_submit: "Жіберу",
     feedback_title: "Кері байланыс",
     feedback_text: "Сұрақтарыңыз болса, бізге хабарласыңыз...",
     popular_title: "Танымал мақалалар",
     links_title: "Пайдалы сілтемелер"
-  }
+  },
 };
 
 function updateLanguage(lang) {
-  document.querySelectorAll('[data-i18n]').forEach(el => {
+  const elements = document.querySelectorAll('[data-i18n]');
+  elements.forEach(el => {
     const key = el.dataset.i18n;
     el.textContent = translations[lang][key] || el.textContent;
   });
 }
 
-document.querySelectorAll('.language-switcher button').forEach(btn =>
-  btn.addEventListener('click', () => updateLanguage(btn.dataset.lang))
-);
-
-document.getElementById('submission-form').addEventListener('submit', e => {
-  e.preventDefault();
-  alert("Заявка успешно отправлена!");
-  e.target.reset();
+document.querySelectorAll('.language-switcher button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    updateLanguage(btn.dataset.lang);
+  });
 });
 
 window.addEventListener('scroll', () => {
