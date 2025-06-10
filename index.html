@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title data-i18n="title">Вестник ИнЕУ</title>
+  <title>Вестник ИнЕУ</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Шапка сайта -->
   <header>
     <div class="header-container">
       <div class="site-title" data-i18n="title"><strong>Вестник ИнЕУ</strong></div>
@@ -16,10 +17,13 @@
         <button data-lang="kz">KZ</button>
       </div>
     </div>
-    <div class="welcome-message" data-i18n="welcome">Добро пожаловать на лендинг информационного журнала ИнЕУ</div>
+    <div class="welcome-message" id="welcome" data-i18n="welcome">
+      Добро пожаловать на лендинг информационного журнала ИнЕУ
+    </div>
   </header>
 
   <div class="main-container">
+    <!-- Левая панель -->
     <nav class="side-nav">
       <ul>
         <li><a href="#about" data-i18n="nav_about">О журнале</a></li>
@@ -31,6 +35,7 @@
       </ul>
     </nav>
 
+    <!-- Контент -->
     <main>
       <section id="about">
         <h2 data-i18n="about_title">О журнале</h2>
@@ -50,24 +55,33 @@
       <section id="articles">
         <h2 data-i18n="articles_title">Последние опубликованные статьи</h2>
         <ul>
-          <li><strong data-i18n="article1">Инновационные подходы в обучении студентов</strong> — <a href="files/article1.pdf" download data-i18n="download">Скачать PDF</a></li>
-          <li><strong data-i18n="article2">Роль цифровых технологий в науке</strong> — <a href="files/article2.pdf" download data-i18n="download">Скачать PDF</a></li>
+          <li>
+            <strong data-i18n="article1">Инновационные подходы в обучении студентов</strong> — <a href="files/article1.pdf" download data-i18n="download">Скачать PDF</a>
+          </li>
+          <li>
+            <strong data-i18n="article2">Роль цифровых технологий в науке</strong> — <a href="files/article2.pdf" download data-i18n="download">Скачать PDF</a>
+          </li>
         </ul>
       </section>
 
       <section id="submit">
         <h2 data-i18n="submit_title">Подача заявки на публикацию</h2>
-        <form id="submission-form">
+        <form id="submission-form" action="https://formspree.io/f/xwpblwzd" method="POST">
           <label for="name" data-i18n="form_name">ФИО:</label>
           <input type="text" id="name" name="name" required>
+
           <label for="email" data-i18n="form_email">Электронная почта:</label>
           <input type="email" id="email" name="email" required>
+
           <label for="phone" data-i18n="form_phone">Номер телефона:</label>
           <input type="tel" id="phone" name="phone" required>
-          <label for="username" data-i18n="form_login">Комментарий:</label>
+
+          <label for="username" data-i18n="form_login">Логин:</label>
           <input type="text" id="username" name="username" required>
-          <label for="file" data-i18n="form_file">Прикрепить статью:</label>
-          <input type="file" id="file" name="file" required>
+
+          <label for="fileLink" data-i18n="form_file">Ссылка на статью (например, Google Диск):</label>
+          <input type="url" id="fileLink" name="fileLink" required>
+
           <button type="submit" data-i18n="form_submit">Отправить заявку</button>
         </form>
       </section>
@@ -78,6 +92,7 @@
       </section>
     </main>
 
+    <!-- Правая панель -->
     <aside class="side-links">
       <h3 data-i18n="popular_title">Популярные статьи</h3>
       <ul>
