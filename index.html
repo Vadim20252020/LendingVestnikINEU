@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="title">Вестник ИнЕУ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="site-title" data-i18n="title"><strong>Вестник ИнЕУ</strong></div>
+      <div class="language-switcher">
+        <button data-lang="ru">RU</button>
+        <button data-lang="kz">KZ</button>
+      </div>
+    </div>
+    <div class="welcome-message" data-i18n="welcome">Добро пожаловать на лендинг информационного журнала ИнЕУ</div>
+  </header>
+
+  <div class="main-container">
+    <nav class="side-nav">
+      <ul>
+        <li><a href="#about" data-i18n="nav_about">О журнале</a></li>
+        <li><a href="#themes" data-i18n="nav_themes">Тематика журнала</a></li>
+        <li><a href="#rules" data-i18n="nav_rules">Правила и критерии</a></li>
+        <li><a href="#articles" data-i18n="nav_articles">Последние статьи</a></li>
+        <li><a href="#submit" data-i18n="nav_submit">Подача заявки</a></li>
+        <li><a href="#feedback" data-i18n="nav_feedback">Обратная связь</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="about">
+        <h2 data-i18n="about_title">О журнале</h2>
+        <p data-i18n="about_text">Информационный журнал "Вестник ИнЕУ" представляет собой междисциплинарную платформу...</p>
+      </section>
+
+      <section id="themes">
+        <h2 data-i18n="themes_title">Тематика журнала</h2>
+        <p data-i18n="themes_text">Основные направления: экономика и управление, педагогика, технические науки...</p>
+      </section>
+
+      <section id="rules">
+        <h2 data-i18n="rules_title">Правила и критерии публикации</h2>
+        <p data-i18n="rules_text">Публикации принимаются при соответствии следующим критериям: оригинальность...</p>
+      </section>
+
+      <section id="articles">
+        <h2 data-i18n="articles_title">Последние опубликованные статьи</h2>
+        <ul>
+          <li><strong data-i18n="article1">Инновационные подходы в обучении студентов</strong> — <a href="files/article1.pdf" download data-i18n="download">Скачать PDF</a></li>
+          <li><strong data-i18n="article2">Роль цифровых технологий в науке</strong> — <a href="files/article2.pdf" download data-i18n="download">Скачать PDF</a></li>
+        </ul>
+      </section>
+
+      <section id="submit">
+        <h2 data-i18n="submit_title">Подача заявки на публикацию</h2>
+        <form id="submission-form">
+          <label for="name" data-i18n="form_name">ФИО:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email" data-i18n="form_email">Электронная почта:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="phone" data-i18n="form_phone">Номер телефона:</label>
+          <input type="tel" id="phone" name="phone" required>
+          <label for="username" data-i18n="form_login">Комментарий:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="file" data-i18n="form_file">Прикрепить статью:</label>
+          <input type="file" id="file" name="file" required>
+          <button type="submit" data-i18n="form_submit">Отправить заявку</button>
+        </form>
+      </section>
+
+      <section id="feedback">
+        <h2 data-i18n="feedback_title">Обратная связь</h2>
+        <p data-i18n="feedback_text">Если у вас возникли вопросы, предложения или замечания, пожалуйста, напишите нам...</p>
+      </section>
+    </main>
+
+    <aside class="side-links">
+      <h3 data-i18n="popular_title">Популярные статьи</h3>
+      <ul>
+        <li><a href="#">Цифровизация образования</a></li>
+        <li><a href="#">Энергетическая безопасность</a></li>
+        <li><a href="#">Наука и инновации</a></li>
+      </ul>
+      <h3 data-i18n="links_title">Полезные ссылки</h3>
+      <ul>
+        <li><a href="https://ineu.edu.kz/" target="_blank">Сайт ИнЕУ</a></li>
+        <li><a href="https://vestnik.ineu.edu.kz/" target="_blank">Журнал Вестник ИнЕУ</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
