@@ -2,28 +2,28 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Вестник ИнЕУ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="title">Вестник ИнЕУ</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Шапка сайта -->
   <header>
     <div class="header-container">
-      <div class="site-title" data-i18n="title"><strong>Вестник ИнЕУ</strong></div>
+      <div class="site-title" data-i18n="title">Вестник ИнЕУ</div>
+      <div class="welcome-message" id="welcome" data-i18n="welcome">
+        Добро пожаловать на лендинг информационного журнала ИнЕУ
+      </div>
       <div class="language-switcher">
         <button data-lang="ru">RU</button>
         <button data-lang="kz">KZ</button>
       </div>
     </div>
-    <div class="welcome-message" id="welcome" data-i18n="welcome">
-      Добро пожаловать на лендинг информационного журнала ИнЕУ
-    </div>
   </header>
 
   <div class="main-container">
-    <!-- Левая панель -->
+    
+    <!-- Левая панелька -->
+
     <nav class="side-nav">
       <ul>
         <li><a href="#about" data-i18n="nav_about">О журнале</a></li>
@@ -35,80 +35,133 @@
       </ul>
     </nav>
 
-    <!-- Контент -->
+    <!-- Основа -->
     <main>
       <section id="about">
         <h2 data-i18n="about_title">О журнале</h2>
-        <p data-i18n="about_text">Журнал «Вестник ИнЕУ» издается с целью распространения научных знаний, поддержки молодых ученых и формирования академического сообщества.
-          Каждый выпуск проходит внутреннее рецензирование, что гарантирует качество и достоверность представленных исследований. Мы стремимся к тому, чтобы наши авторы чувствовали ценность своего труда,
+        <p data-i18n="about_text">
+          Журнал «Вестник ИнЕУ» издается с целью распространения научных знаний, поддержки молодых учёных и формирования академического сообщества.
+          Каждый выпуск проходит внутреннее рецензирование, что гарантирует качество и достоверность представленных исследований. Мы стремимся, чтобы наши авторы чувствовали ценность своего труда,
           а читатели — находили вдохновение и полезную информацию.
         </p>
       </section>
 
-      <section id="themes">
+          <section id="themes">
         <h2 data-i18n="themes_title">Тематика журнала</h2>
-        <p data-i18n="themes_text">Основные направления: экономика и управление, педагогика, технические науки...</p>
-      </section>
+        <p data-i18n="themes_text">Научный журнал «Вестник ИнЕУ» охватывает широкий спектр научных направлений и служит площадкой для публикации междисциплинарных исследований. Основные темы включают:</p>
+          <strong data-i18n="themes_block1_title">Экономика и управление:</strong>
+            <p data-i18n="themes_block1_text">Финансы, бухгалтерский учет, менеджмент, маркетинг, логистика, государственное и муниципальное управление.</p>
+          <strong data-i18n="themes_block2_title">Педагогика и психология:</strong>
+            <p data-i18n="themes_block2_text">Методики преподавания, инклюзивное образование, цифровые технологии в обучении, педагогическое мастерство, психологическая поддержка в образовании.</p>
+          <strong data-i18n="themes_block3_title">Информационные технологии и технические науки:</strong>
+            <p data-i18n="themes_block3_text">Программирование, искусственный интеллект, автоматизация, робототехника, энергосбережение, инженерия.</p>
+          <strong data-i18n="themes_block4_title">Естественные науки:</strong>
+            <p data-i18n="themes_block4_text">Экология, биотехнологии, химия, физика, устойчивое развитие.</p>
+          <strong data-i18n="themes_block5_title">Социальные и гуманитарные науки:</strong>
+            <p data-i18n="themes_block5_text">Социология, история, философия, культурология, языкознание.</p>
+          <strong data-i18n="themes_block6_title">Инновации и научные разработки:</strong>
+            <p data-i18n="themes_block6_text">Инновационные подходы в образовании, науке и производстве, стартапы и прикладные исследования.</p>
+    </section>
 
-      <section id="rules">
+
+     <section id="rules">
         <h2 data-i18n="rules_title">Правила и критерии публикации</h2>
-        <p data-i18n="rules_text">Публикации принимаются при соответствии следующим критериям: оригинальность...</p>
-      </section>
+        <strong data-i18n="rules_block1_title">Оригинальность</strong>
+          <p data-i18n="rules_block1_text">Материал должен быть авторским, не опубликованным ранее, с уникальностью не менее 70%.</p>
+        <strong data-i18n="rules_block2_title">Научность и актуальность</strong>
+          <p data-i18n="rules_block2_text">Тема соответствует тематике журнала и имеет научную новизну и практическую значимость.</p>
+        <strong data-i18n="rules_block3_title">Оформление</strong>
+          <p data-i18n="rules_block3_text">Статья оформляется согласно требованиям: шрифт, структура, содержатся аннотация, ключевые слова, список литературы. Языки: казахский, русский, английский.</p>
+        <strong data-i18n="rules_block4_title">Объем</strong>
+          <p data-i18n="rules_block4_text">Оптимальный объём – 5–10 страниц (A4, интервал 1.5).</p>
+        <strong data-i18n="rules_block5_title">Авторская информация</strong>
+          <p data-i18n="rules_block5_text">Указываются ФИО, должность, ученая степень, место работы, контакты.</p>
+        <strong data-i18n="rules_block6_title">Рецензирование</strong>
+          <p data-i18n="rules_block6_text">Все материалы проходят внутреннюю проверку и могут быть отклонены без объяснения.</p>
+        <strong data-i18n="rules_block7_title">Этические нормы</strong>
+        <p data-i18n="rules_block7_text">Не допускаются плагиат, дублирование, нарушение авторских прав.</p>
 
+</section>
+
+<!-- Доделать привязать статьи -->
       <section id="articles">
         <h2 data-i18n="articles_title">Последние опубликованные статьи</h2>
         <ul>
           <li>
-            <strong data-i18n="article1">Инновационные подходы в обучении студентов</strong> — <a href="files/article1.pdf" download data-i18n="download">Скачать PDF</a>
+            <strong data-i18n="article1">Развитие инженерных компетенций у студентов</strong> — 
+            <a href="files/article3.pdf" download data-i18n="download">Скачать PDF</a>
           </li>
+
           <li>
-            <strong data-i18n="article2">Роль цифровых технологий в науке</strong> — <a href="files/article2.pdf" download data-i18n="download">Скачать PDF</a>
+            <strong data-i18n="article2">Актуальные проблемы экономики в РК</strong> — 
+            <a href="files/article4.pdf" download data-i18n="download">Скачать PDF</a>
           </li>
         </ul>
+        <p>
+          <a href="https://vestnik.ineu.edu.kz/journal/numbers/" target="_blank" style="color: #1e4ba0; font-weight: bold;">
+            Перейти к архиву выпусков →
+          </a>
+        </p>
       </section>
+
+<!-- ФОРМА заявка -->
 
       <section id="submit">
         <h2 data-i18n="submit_title">Подача заявки на публикацию</h2>
         <form id="submission-form" action="https://formspree.io/f/xwpblwzd" method="POST">
           <label for="name" data-i18n="form_name">ФИО:</label>
-          <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required>
 
           <label for="email" data-i18n="form_email">Электронная почта:</label>
-          <input type="email" id="email" name="email" required>
-
+            <input type="email" id="email" name="email" required>
           <label for="phone" data-i18n="form_phone">Номер телефона:</label>
-          <input type="tel" id="phone" name="phone" required>
-
-          <label for="username" data-i18n="form_login">Комментарий:</label>
-          <input type="text" id="username" name="username" required>
-
+            <input type="tel" id="phone" name="phone" required>
+          <label for="comment" data-i18n="form_login">Комментарий:</label>
+            <input type="text" id="comment" name="comment" required>
           <label for="fileLink" data-i18n="form_file">Ссылка на статью (например, Google Диск):</label>
-          <input type="url" id="fileLink" name="fileLink" required>
-
+            <input type="url" id="fileLink" name="fileLink" required>
           <button type="submit" data-i18n="form_submit">Отправить заявку</button>
         </form>
-      </section>
+</section>
 
-      <section id="feedback">
-        <h2 data-i18n="feedback_title">Обратная связь</h2>
-        <p data-i18n="feedback_text">Если у вас возникли вопросы, предложения или замечания, пожалуйста, напишите нам...</p>
-      </section>
+<!-- Низ обр связь -->
+
+     <section id="feedback">
+  <h2 data-i18n="feedback_title">Обратная связь</h2>
+      <table>
+        <tr>
+          <td><strong data-i18n="feedback_phone_label">Телефон:</strong></td>
+          <td><a href="tel:+77212572324">+7 747 339 2683</a></td>
+        </tr>
+        <tr>
+          <td><strong data-i18n="feedback_email_label">Email:</strong></td>
+          <td><a href="mailto:vestnik@ineu.kz">Vadimnikolenko05@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td><strong data-i18n="feedback_address_label">Адрес:</strong></td>
+          <td data-i18n="feedback_address_text">г. Павлодар, ул. Ломова, 45, ИнЕУ</td>
+        </tr>
+      </table>
+</section>
+
     </main>
 
-    <!-- Правая панель -->
+    <!-- Правая панелька -->
     <aside class="side-links">
-      <h3 data-i18n="popular_title">Популярные статьи</h3>
-      <ul>
-        <li><a href="#">Цифровизация образования</a></li>
-        <li><a href="#">Энергетическая безопасность</a></li>
-        <li><a href="#">Наука и инновации</a></li>
-      </ul>
-      <h3 data-i18n="links_title">Полезные ссылки</h3>
-      <ul>
-        <li><a href="https://ineu.edu.kz/" target="_blank">Сайт ИнЕУ</a></li>
-        <li><a href="https://vestnik.ineu.edu.kz/" target="_blank">Журнал Вестник ИнЕУ</a></li>
-      </ul>
-    </aside>
+  <h3 data-i18n="popular_title">Популярные статьи</h3>
+  <ul>
+    <li><a href="#" data-i18n="popular_article1">Цифровизация образования</a></li>
+    <li><a href="#" data-i18n="popular_article2">Энергетическая безопасность</a></li>
+    <li><a href="#" data-i18n="popular_article3">Наука и инновации</a></li>
+  </ul>
+
+  <h3 data-i18n="links_title">Полезные ссылки</h3>
+  <ul>
+    <li><a href="https://ineu.edu.kz/" target="_blank" data-i18n="link_site">Сайт ИнЕУ</a></li>
+    <li><a href="https://vestnik.ineu.edu.kz/" target="_blank" data-i18n="link_journal">Журнал Вестник ИнЕУ</a></li>
+  </ul>
+</aside>
+
   </div>
 
   <script src="script.js"></script>
